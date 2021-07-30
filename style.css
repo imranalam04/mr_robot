@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(thumb-1920-904233.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin : 0 20px;
+    margin-top: 20px;
+    position: relative;
+    font-family: cursive;
+    
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+button {
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid greenyellow;
+    background : transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: greenyellow;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover span{
+  border: none;
+}
